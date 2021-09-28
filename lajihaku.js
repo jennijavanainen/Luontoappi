@@ -1,0 +1,1 @@
+// Lajihaku-rajapinnan scripti
