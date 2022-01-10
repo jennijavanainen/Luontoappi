@@ -1,7 +1,8 @@
 # Luontoappi
-Web-sovellus luontoihmisille.
+Web-sovellus luontoihmisille.<br>
+
 Kouluprojekti, Metropolia Ammattikorkeakoulu, syksy 2020.
-Sovellus suunniteltu ja totutettu yhdessä Oona Rosenbladin kanssa.
+Sovellus suunniteltu ja toteutettu yhdessä Oona Rosenbladin kanssa.
 
 Sovellus tarjoaa maastokartan, jossa on paikkahakutoiminto. Kartalla näkyy myös Helsingissä sijaitsevia luontokohteita. Lisäksi sovelluksessa voi hakea tietoa erilaisista kasveista, eläimistä, hyöteisistä, sienistä ja kaloista.
 
