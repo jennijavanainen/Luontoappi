@@ -1,3 +1,223 @@
-main {
-    
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #f1f1f1;
 }
+main {
+    margin-top:48px;
+}
+header {
+    position:relative;
+    max-width:1500px;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    font-family: 'Halant', serif;
+}
+nav {
+    width:auto;
+    overflow:hidden;
+    float:left;
+    position:absolute;
+    color:#000;
+    background-color:#FC9F5B;
+    transform:translate(-50%,-50%);
+    left:50%;
+    margin-bottom:48px;
+}
+form {
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    justify-content: center;
+    padding: 12px;
+}
+article {
+    margin:12px;
+}
+article img {
+    padding-bottom: 20px;
+}
+.button {
+    padding: 12px 20px;
+    float:left;
+    width:auto;
+    text-decoration:none;
+    color:#000;
+    background-color: #FC9F5B;
+    border:none;
+}
+.button:hover {
+    background-color: #AA381E;
+    color:#f1f1f1;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+}
+a, a:visited {
+    color:#000;
+}
+a:hover {
+    color: #373E28;
+}
+img {
+    max-width:100%;
+    height:auto;
+}
+video {
+    width:100%;
+    height:auto;
+}
+input[type=text] {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline-color: #FC9F5B;
+    text-indent:5px;
+}
+input[type=text]:focus {
+    outline-color: #AA381E;
+}
+.hakutulos {
+    display:block;
+    padding: 6px 24px;
+    margin: 12px;
+    background-color: #85955F;
+    width:50%;
+    min-width: 250px;
+    text-align:left;
+    border:1px solid #ccc;
+}
+.flex-container {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+.justify {
+    text-align: justify;
+}
+#header-div {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    padding:12px 24px;
+    border:1px solid #ccc;
+    color:#f1f1f1;
+    background-color: rgba(30, 0, 0, 0.7);
+}
+#header-div h1 {
+    letter-spacing:8px;
+}
+#header-div h3 {
+    letter-spacing:4px;
+}
+#kartta, #lajihaku {
+    margin-top:50px;
+    display:block;
+    text-align:center;
+    width:100%;
+}
+#hakuteksti, #paikkahakukentta {
+    display:block;
+    border-style:solid;
+    border-width:1px;
+    border-color: #FC9F5B;
+}
+#kuvaosio {
+    width:25%;
+    align-content:start;
+}
+#tekstiosio {
+    width:55%;
+    line-height:160%;
+}
+#video-osio {
+    width:70%;
+}
+#info {
+    max-width: 1500px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.collapsHeader {
+    user-select: none;
+    display: block;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.collapsHeader:after {
+    content: '\025BC';
+    font-size: 12px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+.active:after {
+    content: '\025B2';
+}
+
+/* Header ja asettelu todella suuressa näytössä */
+@media (min-width: 1200px) {
+    #header-div h1{
+        font-size:3.5em;
+    }
+    #header-div h3{
+        font-size:2em;
+    }
+    article {
+        margin:36px;
+    }
+}
+/* Navbar ja header pienessä näytössä, esim mobiili */
+@media (max-width: 620px) {
+    #header-div h1 {
+        font-size:1.5em;
+    }
+    #header-div h3 {
+        font-size:0.8em;
+    }
+    nav {
+        text-align:center;
+        width:100%;
+        transform: none;
+        left:0;
+        padding-top:12px;
+        padding-bottom:12px;
+    }
+    .button{
+        float:none;
+    }
+}
+/* Lisätietosivun asettelu kapeassa näytössä */
+@media (max-width:995px) {
+    #kuvaosio, #tekstiosio {
+        width:80%;
+    }
+}
+
+#map {
+    max-width: 1400px;
+    height:500px;
+    width:100%;
+    margin:auto;
+}
+#paikkahakutulokset {
+    padding:3px;
+    display:inline-block;
+    left:60%;
+    text-align:left;
+}
+.paikka, .paikkahakutulos {
+    padding:4px;
+}
+.paikkahakutulos {
+    color:#373E28;
+}
+.paikkahakutulos:hover {
+    color:#000;
+}
+#paikanna, #reset {
+    margin-left:1px;
+}
+#reset, #paikanna, #paikkahakukentta, #paikkahaku {
+    margin-top:1px;
+}
+

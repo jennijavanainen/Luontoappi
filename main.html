@@ -1,10 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fi">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Luontoportti</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="LB-style.css" rel="stylesheet">
+    <link href='https://beta-karttakuva.maanmittauslaitos.fi/vectortiles/v20/js/mapbox/mapbox-gl.css' rel='stylesheet' />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Halant:wght@600&family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="kuvat/favicon.png" type="image/png" sizes="16x16">
 </head>
 <body>
+<!-- Header -->
+<header>
+    <img src="kuvat/bannerikuva.jpg" alt="Syksyn lehtiä" width="1500" height="797">
+    <div id="header-div">
+        <h1>LUONTOPORTTI</h1>
+        <h3>Oppaasi Suomen luontoon</h3>
+    </div>
+</header>
+<!-- Navigation -->
+<nav>
+    <a href="#kartta" class="button">Kartta</a>
+    <a href="#lajihaku" class="button">Haku</a>
+    <a href="info.html" class="button">Lisätietoja</a>
+</nav>
+<!-- Main -->
+<main class="flex-container">
+    <!-- Kartta -->
+    <article id="kartta">
+        <h4>Hae haluamaasi paikkaa kartalta</h4>
+        <div id="luontokohde"></div>
+        <div id="paikkahakutulokset"></div>
+        <form id="paikkahakuLomake">
+            <input type="text" id="paikkahakukentta" placeholder="Hae paikkaa...">
+            <button class="button" id="paikkahaku" type="submit">Hae</button>
+            <button class="button" id="reset">Tyhjennä haku</button>
+            <button class="button" id="paikanna">Paikanna</button>
+        </form>
+        <div id="map"></div>
 
+    </article>
+    <!-- Hakutoiminto -->
+    <article id="lajihaku" class="flex-container">
+        <h4>Hae eläimiä, kasveja, hyönteisiä, kaloja ja sieniä</h4>
+        <form id="lajihakuForm" action="https://api.laji.fi/v0/">
+            <input id="hakuteksti" type="text" placeholder="Hae...">
+            <button id="hakunappi" class="button">Hae</button>
+        </form>
+        <section id="hakutulokset" class="flex-container">
+        </section>
+    </article>
+</main>
+<!-- Footer -->
+<footer style="height:200px"></footer>
+
+<script src="jQuery.js"></script>
+<script src='https://beta-karttakuva.maanmittauslaitos.fi/vectortiles/v20/js/mapbox/mapbox-gl.js'></script>
+<script src="lajihaku.js"></script>
+<script src="kartta.js"></script>
 </body>
 </html>
