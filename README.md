@@ -5,7 +5,7 @@ Sovellus suunniteltu ja totutettu yhdessä Oona Rosenbladin kanssa.
 
 Sovellus tarjoaa maastokartan, jossa on paikkahakutoiminto. Kartalla näkyy myös Helsingissä sijaitsevia luontokohteita. Lisäksi sovelluksessa voi hakea tietoa erilaisista kasveista, eläimistä, hyöteisistä, sienistä ja kaloista.
 
-<b>Sovelluksessa hyödynnetyt rajapinnat:</b>
+<b>Sovelluksessa hyödynnetyt rajapinnat:</b><br>
 Maanmittauslaitoksen karttapalvelu: https://www.maanmittauslaitos.fi/rajapinnat/kartat<br>
 Eliötietokanta: https://api.laji.fi/explorer/<br>
 Helsingin luontokohteet: https://citynature.eu/fi/kehittajille/<br>
